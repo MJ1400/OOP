@@ -1,12 +1,9 @@
 package eu.marten.java;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Before;
 import org.junit.BeforeClass;
 
-import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
@@ -33,18 +30,44 @@ public class AppTest
     }
 
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void varIsHigherThanOne() {
+         assertFalse("Variable is lower than 1", app.calculationValue(0));
     }
 
     @Test
+    public void varDoesntEqualSame() {
+        assertNotEquals("Doesn't equal", true, app.calculationValue(0));
+    }
+
+    @Test
+    public void notNull() {
+        assertNotNull("Not null", app.calculation2(1));
+    }
+
+    @Test
+    public void notSame() {
+        assertNotSame("Not same", 3, app.calculation2(1));
+    }
+
+    @Test
+    public void isSame() {
+        assertSame("Same", 1, app.calculation2(0));
+    }
+
+
+
+    @Test
     public void oneEqualsTwo() {
-        assertEquals("One equals two", 1, 2);
+        assertEquals("One equals two", 1, 1);
     }
 
     @Test
     public void getMaxValue() {
         assertEquals("Get max value", 10, app.maxValue(4, 10));
+    }
+    @Test
+    public void testArray() {
+        int[] testIntArray = {1,2,3};
+        assertArrayEquals("Test arrays", testIntArray, app.arrays(1));
     }
 }
