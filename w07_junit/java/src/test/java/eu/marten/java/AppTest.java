@@ -1,6 +1,5 @@
 package eu.marten.java;
 
-import org.junit.Before;
 import org.junit.BeforeClass;
 
 import static org.junit.Assert.*;
