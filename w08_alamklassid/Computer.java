@@ -3,20 +3,21 @@ class Computer {
     String GPU;
     String CPU;
     String RAM;
-    public void Test() {
-        System.out.println("Computer upperclass print");
-    }
+    String type = "Computer";
 }
 
 class Laptop extends Computer {
-    protected String type = "Laptop";
-    public void Test() {
-        System.out.println("Laptop subclass print");
+    String type = "Laptop";
+    void superTest() {
+        System.out.println("This is subclass' type: " + type);
+        System.out.println("This is upperclass' type: " + super.type);
     }
-
 }
 
 class PC extends Computer {
-    protected String type = "PC";
+
+}
+
+class PCmain {
 
 }

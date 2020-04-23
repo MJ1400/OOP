@@ -22,6 +22,8 @@ public class ComputerMain {
     PC1.RAM = "16gb";
     PCs.add(PC1);
 
+    laptop1.superTest();
+
 
     }
 
