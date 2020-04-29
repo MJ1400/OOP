@@ -5,7 +5,7 @@ interface Functions {
     public void createBoard();
     public char getSymbol();
     public void printBoard();
-    public void changePlayer();
+    public char changePlayer();
     public boolean isBoardFull();
     public boolean checkWin();
     public boolean checkWinConditions();
@@ -84,13 +84,14 @@ public class GameFunctions implements Functions {
         return ((c1 != '-') && (c1 == c2) && (c2 == c3));
     }
 
-    public void changePlayer() {
+    public char changePlayer() {
         if (symbol == 'x') {
             symbol = 'o';
         }
         else if (symbol == 'o'){
             symbol = 'x';
         }
+        return symbol;
     }
 
     public boolean placeSymbol(int row, int column) {
