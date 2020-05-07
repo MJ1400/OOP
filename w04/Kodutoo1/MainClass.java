@@ -12,18 +12,17 @@ public class MainClass {
         System.out.println("Sisesta kylmiku v2rv: ");
         String color = input.nextLine();
         System.out.println("Sisesta kylmiku kaal: ");
-        String weight = input.nextLine();
+        int weight = input.nextInt();
 
-        if(region == "EU" || region == "eu"){
+        if(region.equalsIgnoreCase("eu")){
             WarehouseEU.add(new Fridge(color, weight));
-        } else if (region == "US" || region == "us") {
+        } else if (region.equalsIgnoreCase("us")) {
             WarehouseUS.add(new Fridge(color, weight));
         } else {
             System.out.println("Sellist regiooni ei eksisteeri!");
-            System.out.println(WarehouseEU.toString());
         }
 
-
+        input.close();
 
     }
 }

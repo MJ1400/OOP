@@ -1,9 +1,9 @@
 public class Fridge {
 
-    private String color = "";
-    private String weight = "";
+    public String color = "";
+    public int weight = 0;
 
-    public Fridge(String color, String weight) {
+    public Fridge(String color, int weight) {
         this.color = color;
         this.weight = weight;
     }
