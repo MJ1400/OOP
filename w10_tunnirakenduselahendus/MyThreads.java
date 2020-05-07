@@ -11,7 +11,7 @@ class Thread1 extends Thread{
  }  
 }  
   
-class Thread2 extends Thread{  
+class Thread2 extends Thread{   
  public void run(){  
    for (int i = 10; i > 0; i--) {
        System.out.println("Thread2: " + i);
