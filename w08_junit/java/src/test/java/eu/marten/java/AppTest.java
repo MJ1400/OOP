@@ -21,6 +21,7 @@ public class AppTest
     public static void initiateApp() {
         name = "Marten";
         app = new App(name);
+        
     } 
 
     @Test
