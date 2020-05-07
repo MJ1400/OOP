@@ -2,23 +2,23 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2020-05-07T00:08:51</date>
-  <millis>1588799331208</millis>
+  <date>2020-05-07T16:55:30</date>
+  <millis>1588859730752</millis>
   <sequence>0</sequence>
-  <logger>Main</logger>
+  <logger>Tund</logger>
   <level>WARNING</level>
-  <class>Main</class>
+  <class>Tund</class>
   <method>main</method>
   <thread>1</thread>
   <message>/ by zero</message>
 </record>
 <record>
-  <date>2020-05-07T00:08:51</date>
-  <millis>1588799331232</millis>
+  <date>2020-05-07T16:55:30</date>
+  <millis>1588859730777</millis>
   <sequence>1</sequence>
-  <logger>Main</logger>
+  <logger>Tund</logger>
   <level>WARNING</level>
-  <class>Main</class>
+  <class>Tund</class>
   <method>main</method>
   <thread>1</thread>
   <message>3</message>
