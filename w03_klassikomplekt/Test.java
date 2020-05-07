@@ -33,6 +33,5 @@ public class Test {
     System.out.println(list.get(i));
   }
 
-
   }
 }
