@@ -6,5 +6,6 @@ public class Kodune {
     public static void main(String[] args) {
         String nimi = "Marten";
         myFunction(nimi);
+        
     }
 }
