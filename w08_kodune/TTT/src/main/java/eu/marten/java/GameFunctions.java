@@ -74,7 +74,7 @@ public class GameFunctions implements Functions {
             } else if (checkRowCol(board[0][i], board[1][i], board[2][i]) == true) {
                 return true;
             } else if ((checkRowCol(board[0][0], board[1][1], board[2][2]) == true) || (checkRowCol(board[0][2], board[1][1], board[2][0]) == true)){
-                
+                return true;
             }
         }
         return false;

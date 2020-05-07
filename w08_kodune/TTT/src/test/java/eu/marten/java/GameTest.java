@@ -21,6 +21,7 @@ public class GameTest {
     @BeforeClass
     public static void initiateGame() {
     gf.createGame();
+    
     } 
 
     
