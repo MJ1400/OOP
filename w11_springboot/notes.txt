@@ -1,0 +1,7 @@
+./mvnw spring-boot:run
+
+// HTTP methods
+GET
+PUT
+PATCH
+DELETE
