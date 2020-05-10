@@ -11,7 +11,7 @@ class Word implements WordInterface {
         this.word = word;
     }
 
-    public int charCount(Character t2ht) {
+    public HashMap<Character, Integer> charCount(Character t2ht) {
         HashMap<Character, Integer> charMap = new HashMap<Character, Integer>();
         char[] charArray = word.toCharArray();
 
