@@ -3,7 +3,7 @@ package ee.mj1400.kt;
 import java.util.HashMap;
 
 class Word implements WordInterface {
-    String word;
+    private final String word;
     Character t2ht;
 
     public Word(String word) {
@@ -33,7 +33,7 @@ class Word implements WordInterface {
     }
 
     public String getWord(){
-        return this.word;
+        return word;
     }
 
 }
