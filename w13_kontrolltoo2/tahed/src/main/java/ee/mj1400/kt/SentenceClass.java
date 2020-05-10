@@ -1,7 +1,6 @@
 package ee.mj1400.kt;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
@@ -36,17 +35,17 @@ class Sentence {
         return wordObjList;
     }
 
-    public void getSentenceCharCount(Character c) {
+    public int getSentenceCharCount(Character c) {
         int count = 0;
         for (Word obj : wordObjList) {
-            HashMap<Character, Integer> mapVar = obj.charCount(c);
+            count+= obj.charCount(c);
+            //HashMap<Character, Integer> mapVar = obj.charCount(c);
 
-            if(mapVar.containsKey(c)){
-                count++;
-            } 
-             
-            
+            // if(mapVar.containsKey(c)){
+            //     count++;
+            // } 
         }
+        return count;
     }
     
     

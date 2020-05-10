@@ -4,14 +4,15 @@ import java.util.HashMap;
 
 class Word implements WordInterface {
     private final String word;
-    Character t2ht;
+    
 
     public Word(String word) {
         
         this.word = word;
     }
 
-    public HashMap<Character, Integer> charCount(Character t2ht) {
+    public int charCount(Character t2ht) {
+        int charactercount = 0;
         HashMap<Character, Integer> charMap = new HashMap<Character, Integer>();
         char[] charArray = word.toCharArray();
 
@@ -22,15 +23,15 @@ class Word implements WordInterface {
                 } else {
                     charMap.put(c, 1);
                 }
+               charactercount = charMap.get(c);
             }
-
         }
-        System.out.println("Tähe arv sõnas " + '"' + word + '"');
-        charMap.forEach((k, v) -> {
-            System.out.println(k + ": " + v);
-        });
-        return charMap;
-    }
+       
+        //charMap.forEach((k, v) -> {
+            //System.out.println(k + ": " + v);
+            return charactercount;
+        }
+        
 
     public String toString(){
         return word;

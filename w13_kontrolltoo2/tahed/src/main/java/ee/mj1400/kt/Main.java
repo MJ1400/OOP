@@ -3,13 +3,13 @@ package ee.mj1400.kt;
 import java.util.Scanner;
 
 public class Main {
-    static int option;
-    static String word;
-    static char t2ht;
-    static String sentence;
-    
     
     public static void main(String[] args) {
+        int option;
+        String word;
+        char t2ht;
+        String sentence;
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("1 - Sõna | 2 - Lause ");
         option = Integer.parseInt(scanner.nextLine());
@@ -21,7 +21,9 @@ public class Main {
         t2ht = scanner.nextLine().toLowerCase().charAt(0);
         
         Word wordobj = new Word(word);
-        wordobj.charCount(t2ht);
+
+        System.out.println("Tähe arv sõnas " + '"' + word + '"');
+        System.out.println(t2ht + ": " + wordobj.charCount(t2ht));
         
         } else if(option == 2) {
         System.out.println("Sisesta lause: ");
@@ -30,16 +32,11 @@ public class Main {
         Sentence sentenceobj = new Sentence(sentence);
         sentenceobj.wordCount();
         System.out.println(sentenceobj.getWordObjList().toString());
-        // sentenceobj.getSentenceCharCount();
-
+        System.out.println("Lauses oli tähte a: " + sentenceobj.getSentenceCharCount('a'));
 
         } else {
             System.out.println("Palun sisestage kas 1 või 2!");
         }
-        // Word wordobj = new Word();
-        // SentenceClass sentenceobj = new SentenceClass("Vanamees vanamees viiskend kuus");
-        // System.out.println(sentenceobj.wordCount());
-
         scanner.close();
         
     }
