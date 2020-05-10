@@ -1,10 +1,11 @@
 package ee.mj1400.kt;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         int option;
         String word;
         char t2ht;
@@ -33,6 +34,8 @@ public class Main {
         sentenceobj.wordCount();
         System.out.println(sentenceobj.getWordObjList().toString());
         System.out.println("Lauses oli tähte a: " + sentenceobj.getSentenceCharCount('a'));
+        sentenceobj.writeWordsToFile();
+        sentenceobj.readWordsFromFile();
 
         } else {
             System.out.println("Palun sisestage kas 1 või 2!");
