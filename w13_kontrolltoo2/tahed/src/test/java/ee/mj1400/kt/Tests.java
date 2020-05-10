@@ -2,8 +2,6 @@ package ee.mj1400.kt;
 
 import static org.junit.Assert.*;
 
-import java.util.HashMap;
-
 import org.hamcrest.collection.IsMapContaining;
 import org.junit.Test;
 

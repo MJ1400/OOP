@@ -30,7 +30,7 @@ public class Main {
         Sentence sentenceobj = new Sentence(sentence);
         sentenceobj.wordCount();
         System.out.println(sentenceobj.getWordObjList().toString());
-        sentenceobj.getSentenceCharCount();
+        // sentenceobj.getSentenceCharCount();
 
 
         } else {
