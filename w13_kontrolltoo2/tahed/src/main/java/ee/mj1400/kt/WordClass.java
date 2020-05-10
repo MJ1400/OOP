@@ -11,7 +11,7 @@ class Word implements WordInterface {
         this.word = word;
     }
 
-    public HashMap<Character, Integer> charCount(Character t2ht) {
+    public int charCount(Character t2ht) {
         HashMap<Character, Integer> charMap = new HashMap<Character, Integer>();
         char[] charArray = word.toCharArray();
 
@@ -32,7 +32,7 @@ class Word implements WordInterface {
         return charMap;
     }
 
-    public String getWord(){
+    public String toString(){
         return word;
     }
 
