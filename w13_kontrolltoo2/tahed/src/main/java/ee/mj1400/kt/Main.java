@@ -23,19 +23,20 @@ public class Main {
         
         Word wordobj = new Word(word);
 
-        System.out.println("Tähe arv sõnas " + '"' + word + '"');
-        System.out.println(t2ht + ": " + wordobj.charCount(t2ht));
+        // System.out.println("Tähe arv sõnas " + '"' + word + '"');
+        // System.out.println(t2ht + ": " + wordobj.charCount(t2ht));
         
         } else if(option == 2) {
         System.out.println("Sisesta lause: ");
         sentence = scanner.nextLine().toLowerCase();
-
+        System.out.println("--------------------------------");
         Sentence sentenceobj = new Sentence(sentence);
         sentenceobj.wordCount();
         System.out.println(sentenceobj.getWordObjList().toString());
+        System.out.println("--------------------------------");
         System.out.println("Lauses oli tähte a: " + sentenceobj.getSentenceCharCount('a'));
-        sentenceobj.writeWordsToFile();
         sentenceobj.readWordsFromFile();
+        sentenceobj.writeWordsToFile();
 
         } else {
             System.out.println("Palun sisestage kas 1 või 2!");

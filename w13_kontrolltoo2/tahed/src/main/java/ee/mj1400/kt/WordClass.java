@@ -3,7 +3,7 @@ package ee.mj1400.kt;
 import java.util.HashMap;
 
 class Word implements WordInterface {
-    private final String word;
+    private String word;
     
 
     public Word(String word) {
@@ -26,6 +26,10 @@ class Word implements WordInterface {
                charactercount = charMap.get(c);
             }
         }
+
+        System.out.println("Tähe arv sõnas " + '"' + word + '"');
+        System.out.println(t2ht + ": " + charactercount);
+        System.out.println("--------------------------------");
        
         //charMap.forEach((k, v) -> {
             //System.out.println(k + ": " + v);
