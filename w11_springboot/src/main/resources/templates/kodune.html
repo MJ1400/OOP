@@ -5,5 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kodune</title>
   </head>
-  <body></body>
+  <body>
+    <div th:each="bool : ${bools}" th:if="${bool} == true">
+      <h1 th:text="${myVar}"></h1>
+    </div>
+  </body>
 </html>
