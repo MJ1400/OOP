@@ -14,7 +14,7 @@ class Massiivid {
     public static void main(String[] args) {
 
 
-        //Kasutatakse primitiivtüüpi andmete hoidmiseks, sest Collection klassid (Nt ArrayListid) on aeglasemad
+        //Kasutatakse primitiivtüüpi andmete hoidmiseks, sest Collection klassid on aeglasemad
         //Kasutatakse, kui on teada, et töödatakse ainult kindla arvu elementidega, sest arraylistid eraldavad umbes kaks korda rohkem mälu ja mälu läheks raisku
         
 
