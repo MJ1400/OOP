@@ -6,12 +6,10 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-
 
 class Sentence {
     Scanner scanner = new Scanner(System.in);
@@ -62,27 +60,25 @@ class Sentence {
 
     public void writeWordsToFile() throws IOException {
         String newLine = System.getProperty("line.separator");
-        try (FileWriter writer = new FileWriter("output.txt", true);
-        BufferedWriter bw = new BufferedWriter(writer)) {
+        try (FileWriter writer = new FileWriter("output.txt", true); BufferedWriter bw = new BufferedWriter(writer)) {
             for (String w : newWords) {
                 bw.write(w + newLine);
-            } 
-                
             }
 
-        
+        }
+
     }
 
     public void readWordsFromFile() throws IOException {
         List<String> fileWordList = Files.readAllLines(new File("output.txt").toPath(), Charset.defaultCharset());
-        
-        for(String w : sentenceArray){
-            if(!fileWordList.contains(w)){
+
+        for (String w : sentenceArray) {
+            if (!fileWordList.contains(w)) {
                 newWords.add(w);
             }
         }
 
-        if(newWords.isEmpty()) {
+        if (newWords.isEmpty()) {
             System.out.println("Uusi sõnu ei olnud!");
         } else {
             System.out.println("Uued sõnad olid: " + newWords.toString());
@@ -92,5 +88,4 @@ class Sentence {
 
     }
 
-    
 }
